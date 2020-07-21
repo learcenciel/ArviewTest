@@ -58,12 +58,4 @@ class RealmGame: Object {
         
         return twitchGameResponse
     }
-    
-    static func getRealmGame(_ gameResponse: GameResponse) -> RealmGame {
-        return RealmGame(id: gameResponse.game.id,
-                               title: gameResponse.game.name,
-                               posterUrl: gameResponse.game.imageBox.gameUrlPath,
-                               viewersCount: gameResponse.viewersCount,
-                               channelsCount: gameResponse.channelsCount)
-    }
 }
